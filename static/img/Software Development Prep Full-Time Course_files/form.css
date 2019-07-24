@@ -1,0 +1,15 @@
+form select:focus:valid,
+form input:focus:valid,
+form textarea:focus:valid {
+    border-color: rgba(0,123,255,.25);
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+form select:focus:invalid,
+form input:focus:invalid,
+form textarea:focus:invalid {
+    border-color: rgba(250,5,5,0.55);
+    box-shadow: 0 0 2px 2px rgba(250,5,5,0.55);
+}
+.error-message{
+    color: rgba(250,5,5,0.55);
+}

@@ -5,22 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    {% load crispy_forms_tags %}
-
+ 
+    
     <link rel="icon" href="/home/willen/Documents/django-multiple-user-types-example/static/img/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Clicker+Script" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/home/willen/Documents/django-multiple-user-types-example/static/vendor/fontello-2f186091/css/fontello.css">
     <link rel="stylesheet" type="text/css" href="/home/willen/Documents/django-multiple-user-types-example/static/css/app.css">
-</head>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://moringaschool.com/static/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://moringaschool.com/static/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="https://moringaschool.com/static/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="https://moringaschool.com/static/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00a300">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" type="text/css" href="static/css/app.css">
+    <link rel="prerender stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="prefetch stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.5/slick.min.css">
+
+    <link href="./Software Development Prep Full-Time Course_files/all.min.css" rel="stylesheet">
+    <link href="./Software Development Prep Full-Time Course_files/font-awesome.min.css" rel="stylesheet">
+    <link href="./Software Development Prep Full-Time Course_files/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="https://moringaschool.com/static/css/main.css" rel="prefetch stylesheet">
+    <link href="https://moringaschool.com/static/css/home.css" rel="prefetch stylesheet">
+    <link href="./Software Development Prep Full-Time Course_files/slider.css" rel="stylesheet">
+
+
+    <link href="./Software Development Prep Full-Time Course_files/post_view.css" rel="stylesheet">
+    <link href="https://moringaschool.com/static/css/course.css" rel="prefetch stylesheet">
+    <link href="./Software Development Prep Full-Time Course_files/media_queries.css" rel="stylesheet">
+    <link href="./Software Development Prep Full-Time Course_files/cookielaw.css" rel="stylesheet">
+  {% load bootstrap4 %}
+  
+  </head>
 <body>
-    <div class="container">
+
+    <header id="banner_image">
+        <!-- Navigation -->
+        
+
+
+
+        <div class="container-fluid">
+            <div class="row">
+                <p class="img-shadow"></p>
+                <div class="col-md-12">
+                    <h1 class="banner_title">Software Development Prep Full-Time Course</h1>
+                    <p class="banner_line"></p>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container" style="">
+      <div class="row">
+        <div class="col-md-6">
+          
     <form method="post" novalidate>
         {% csrf_token %}
-        {{ form|crispy }}
+        {%bootstrap_form form%}
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
     </div>
+      </div>
+    </div>
+    
 
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

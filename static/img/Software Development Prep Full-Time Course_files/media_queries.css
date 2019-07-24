@@ -1,0 +1,563 @@
+@media screen and (min-width: 1024px) {
+    header .shadow {
+         /*height: 522px;*/
+    }
+    #banner_image {
+        height: 274px;
+    }
+    .img-one img {
+        margin-left: 50px;
+        margin-top: 30px;
+    }
+
+    .img-two img {
+        margin-left: 170px;
+    }
+
+    .img-three img {
+        margin-top: 37px;
+        margin-left: 219px;
+    }
+
+    .img-four img {
+        margin-left: 80px;
+    }
+
+    #alumni {
+        margin: 30px 0 38px;
+    }
+
+    #alumni .container-fluid {
+        margin-bottom: 30px;
+    }
+
+    .bingo {
+        top: 265px;
+        right: 560px;
+    }
+
+    #single_view .post_title {
+        padding: 0 13%;
+    }
+
+    .news-button .btn-xl {
+        margin: 72px 20px 0 0;
+    }
+    .videoWrapper {
+        height: 1303px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .navbar .nav li {
+        display: inline;
+        list-style-type: none;
+        padding-right: 28px;
+    }
+
+    .navbar-brand img {
+        width: 150px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .card.image-left {
+        /*box-shadow: 30px 30px 33px 0 rgba(0, 0, 0, 0.3), 5px 4px 1px 0 rgba(0, 0, 0, 0.19), 0 15px 25px 0 rgba(0, 0, 0, 0.5);*/
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.3), 0 0 0 0 rgba(0, 0, 0, 0.19), 0 0 0 0 rgba(0, 0, 0, 0.5);
+        transition: box-shadow 0.28s cubic-bezier(4.4, 0, 12.2, 7);
+        width: auto;
+        cursor: pointer;
+    }
+
+    .card-img-sm-left {
+        width: 40%;
+        height: 339px;
+    }
+    #no-slider .card-img-sm-left {
+        width: 50%;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-link {
+        color: #000;
+        padding: 0;
+        margin: 0;
+        background-color: #FFFFFF;
+        cursor: pointer;
+    }
+    .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+        border-bottom: 5px solid #637c33;
+    }
+    .card.mb-3:first-child{
+        margin-top: 12px;
+    }
+    #banner_image {
+        position: relative;
+        margin-top: 35px;
+        height: 246px;
+    }
+
+    .fixed-top {
+        background: rgb(99, 124, 51) !important;
+    }
+    .bg-gray {
+        padding: 22px 0;
+    }
+    .moringa-events-pane-left h1 {
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .moringa-events-pane-left h2 {
+        font-size: 22px;
+        margin-top: 20px;
+        width: 75%;
+    }
+    .moringa-events-pane-left h3 {
+        font-size: 24px;
+        margin-top: 23px;
+    }
+    .content-details .play a i {
+        opacity: 1;
+        right: 38%;
+        font-size: 50px;
+    }
+    .outcomes-data .container-fluid{
+        width: 90%;
+        margin-top: 40px;
+    }
+    .btn-xl {
+        margin: 10px 20px 0 0;
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+    .videoWrapper {
+        height: 1619px;
+    }
+    .wrapper {
+        width: 100%;
+        height: 374px;
+        background-size: cover;
+    }
+    .play-button {
+        margin: 262px auto 0px;
+        font-size: 62px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .navbar-right li:last-child {
+        margin: 14px 0;
+    }
+    #navbar a {
+        font-size: 12px;
+    }
+
+    .navbar .nav li {
+        padding-right: 21px;
+    }
+
+    .img-one,
+    .img-two,
+    .img-three,
+    .img-four {
+        display: none;
+    }
+
+    .enroll-button button {
+        margin: 28px;
+        border-radius: 0;
+        color: #FFFFFF;
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+
+    .nav-pills .nav-link {
+        font-size: 17px;
+    }
+
+    .tab-text {
+        font-weight: 200;
+        line-height: 34px;
+        margin: 30px 0 0;
+    }
+
+    .card-text {
+        font-size: 20px;
+        font-weight: 200;
+    }
+
+    .navbar-toggler {
+        margin-right: 0;
+    }
+
+    .navbar-brand img {
+        width: 90px;
+    }
+
+    #recent div {
+        display: unset;
+    }
+
+    #recent div ul {
+        list-style: none;
+        margin: 0;
+        padding-left: 11px;
+    }
+
+    #recent .tab-header {
+        font-size: 20px;
+        line-height: 28px;
+        padding: 0;
+        margin: 0;
+    }
+
+    #footer-social {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    #post_list .container {
+        width: 92%;
+    }
+
+    #sidebar {
+        margin-top: 40px;
+    }
+
+    .news .card-body .card-text {
+        margin: 20px 0 13px 40px;
+        color: #041333;
+        font-weight: 300;
+        line-height: 34px;
+    }
+    .moringa-events-pane-left h1 {
+        font-size: 35px;
+        font-weight: 500;
+    }
+    .moringa-events-pane-left h2 {
+        font-size: 30px;
+        margin-top: 18px;
+        width: 85%;
+    }
+    .moringa-events-pane-left h3 {
+        font-size: 23px;
+        margin-top: 30px;
+    }
+    .moringa-events-pane-left a {
+        font-size: 23px;
+        margin-top: 30px;
+        color: #0f74a8;
+    }
+    .bg-gray {
+        background-color: #F1F1F1;
+        padding: 15px 0;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+    .banner_title.home {
+        font-size: 35px;
+    }
+
+    .img-one,
+    .img-two,
+    .img-three,
+    .img-four {
+        display: none;
+    }
+
+    #home_banner_image .shadow {
+        height: 331px;
+    }
+    .banner_title.home {
+        margin-top: 138px;
+    }
+    .banner_title {
+        margin-top: 125px;
+        font-size: 32px;
+        width: 600px;
+    }
+    .banner_line {
+        border-bottom: 2px solid;
+        width: 250px;
+        margin: 0 0 5px;
+    }
+    .quote {
+        font-size: 24px;
+    padding: 0 88px;
+    }
+    .footer-container p.paragraph,
+    p.paragraph {
+        font-size: 23px;
+        font-weight: 200;
+        margin-bottom: 20px;
+    }
+
+    h1.heading {
+        margin-top: 20px;
+        font-size: 1.7rem;
+    }
+
+    #alumni .tab-header {
+        font-size: 19px;
+        line-height: 0;
+        margin: 0 0 17px;
+    }
+
+    .alumni-p {
+        font-size: 13px;
+    }
+
+    .play a i {
+        opacity: 1;
+        font-size: 50px;
+    }
+
+    .tab-header {
+        font-size: 21px;
+        line-height: 1;
+        margin: 20px 0 0;
+    }
+
+    .stat {
+        height: 84px;
+        width: 248px;
+        color: #12326B;
+        font-size: 48px;
+        font-weight: 300;
+        line-height: 100px;
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    #home_banner_image {
+        /*height: 408px;*/
+        width: 100%;
+    }
+
+    #home_banner_image .shadow {
+        height: 439px;
+        opacity: 0.3;
+    }
+
+    .banner_line {
+        margin: 18px 0;
+        width: 50%;
+    }
+
+    .navbar-collapse {
+        max-height: none;
+    }
+    #navbar {
+        background-color: #637C33 !important;
+    }
+
+    nav .fixed-top {
+        position: fixed !important;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    #home_banner_image {
+        width: 100%;
+    }
+
+    .banner_title.home {
+        font-size: 32px;
+        margin-top: 120px;
+    }
+
+    .banner_title {
+        margin-top: 117px;
+        font-size: 25px;
+        width: auto;
+    }
+
+    #moringa-pathways-section {
+        padding: 0 0;
+    }
+
+    .moringa-pathways img {
+        height: 10%;
+        width: 48%;
+    }
+
+    .quote {
+        font-size: 21px;
+        font-weight: 200;
+        border-bottom: 1px solid gray;
+        margin: 0 50px;
+        text-align: center;
+    }
+
+    .bg-gray {
+        background-color: #F1F1F1;
+        padding: 10px;
+    }
+
+    .modal-content {
+        width: 400px;
+    }
+
+    #iframeYoutube {
+        width: 365px;
+        height: 315px;
+    }
+
+    .alumni-shadow {
+        bottom: 48px;
+    }
+
+    footer .footer_nav div:last-child {
+        margin-top: 30px;
+    }
+    .news .card-body {
+        height: 236px;
+    }
+    .news .card-body .card-img {
+        width: 75px;
+        margin: 33px 0 0 10px;
+    }
+    p.paragraph {
+        font-size: 21px;
+        text-align: -webkit-center;
+        text-align: -moz-center;
+        text-align: center;
+    }
+
+    .footer-container p.paragraph {
+        font-size: 26px;
+        margin: 18px;
+        text-align: center;
+        text-align: -webkit-center;
+        text-align: -moz-center;
+        text-align: center;
+    }
+
+    .footer-container h1.heading {
+        margin-top: 20px;
+    }
+
+    .custom_container {
+        width: 100%;
+    }
+
+    .nav-pills .nav-link,
+    .nav-pills .show>.nav-link {
+        color: #000;
+        background-color: #f1f1f1;
+        margin-right: 16px;
+        margin-bottom: 5px;
+        padding: 9px;
+    }
+    section.outcomes-data,
+    h1.heading{
+        text-align: center;
+    }
+    #all-programs .heading {
+        margin: 30px 0 0;
+        font-size: 1.7rem;
+    }
+    .videoWrapper{
+        height: 1816px;
+    }
+    .wrapper {
+        width: 100%;
+        height: 211px;
+        background-size: cover;
+    }
+    .play-button {
+        margin: 132px auto 0;
+        font-size: 50px;
+    }
+}
+
+
+@media only screen and (width: 375px) {
+    div.card.careers {
+        height: 313px;
+        width: 314px;
+    }
+
+    .careers.card .header {
+        font-size: 23px;
+        line-height: 34px;
+    }
+
+    .careers .tab-text {
+        font-size: 16px !important;
+    }
+
+    .careers.card {
+        margin: 10px 0;
+    }
+}
+
+
+@media only screen and (width: 320px) {
+    #post_list .tab-header {
+        font-size: 20px;
+        font-weight: 200;
+    }
+
+    div.card.careers {
+        height: 373px;
+        width: 261px;
+    }
+
+    .careers.card .header {
+        font-size: 21px;
+        line-height: 29px;
+    }
+
+    .careers .tab-text {
+        font-size: 19px !important;
+        font-weight: 200;
+        line-height: 32px;
+        margin: 10px 30px 8px;
+    }
+
+    .careers.card {
+        margin: 5px 0;
+    }
+
+    .banner_line {
+        width: 265px;
+    }
+
+    #banner_image {
+        height: 218px;
+    }
+    .banner_title {
+    margin-top: 53px;
+    font-size: 22px;
+    width: auto;
+}
+
+    header .shadow {
+        height: 267px;
+    }
+
+    .footer-container p.paragraph {
+        font-size: 21px;
+    }
+
+    .tab-text:last-child {
+        margin-bottom: 40px;
+    }
+
+    .footer-container h1.heading {
+        margin-top: 80px;
+        font-size: 2rem;
+    }
+}
+
+@media  only screen and (max-width: 425px) {
+    .about-image {
+        width: 230px;
+    }
+}

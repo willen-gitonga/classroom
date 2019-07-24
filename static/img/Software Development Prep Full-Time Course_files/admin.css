@@ -1,0 +1,38 @@
+body {
+    font-size: 14px;
+}
+
+header {
+    background-color: #ffffff;
+}
+
+.btn-sm {
+    padding: 9px 12px;
+    font-size: 13px;
+    border-radius: 0;
+    color: #FFFFFF;
+}
+
+#pagination .btn-xl {
+    padding: 4px 14px;
+}
+
+#footer-social.bg-green {
+    padding: 39px;
+    font-size: 13px;
+}
+
+.table td,
+.table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 45px;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}

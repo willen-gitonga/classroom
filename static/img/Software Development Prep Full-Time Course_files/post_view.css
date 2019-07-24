@@ -1,0 +1,24 @@
+#single_view h1,
+#single_view h2,
+#single_view h3,
+#single_view h4{
+    font-weight: 200 !important;
+}
+#single_view h1{
+    font-size: 40px;
+    font-weight: 200;
+    margin-bottom: 30px;
+}
+#single_view img{
+    width: 50%;
+}
+#single_view .post_title {
+    margin-top: 300px;
+    font-size: 60px;
+    width: 100%;
+    font-weight: 300;
+}
+#single_view .tab-header{
+    font-weight: 300;
+    font-size: 25px;
+}
