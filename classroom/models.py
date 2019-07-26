@@ -47,11 +47,11 @@ class Answer(models.Model):
     def __str__(self):
         return self.text
 
-
 class Student(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, primary_key=True)
     quizzes = models.ManyToManyField(Quiz, through='TakenQuiz')
     interests = models.ManyToManyField(Subject, related_name='interested_students')
+    is_pass = models.BooleanField('Passed student',default=False)
 
     def get_unanswered_questions(self, quiz):
         answered_questions = self.quiz_answers \
@@ -136,16 +136,17 @@ class Stude(models.Model):
     last_name = models.CharField(max_length =40)
     email = models.CharField(max_length =100)
     class_name = models.CharField(max_length =100,choices=CLASS_CHOICES)
-    phone_Number =   models.IntegerField(default=0, null=True)
+    phone_Number =   models.IntegerField(default=None, null=True)
     Gender = models.CharField(max_length =100,choices=GENDER_CHOICES, null=True)
     Have_you_participated_in_a_Moringa_School_training_before = models.CharField(max_length =100,choices=PARTICIPATE_CHOICES, null=True)
     Are_you_interested_in_joining_Moringa_Core_after_Moringa_Prep =models.CharField(max_length =100,choices=CORE_CHOICES, null=True)
     Where_did_you_hear_about_Moringa_School = models.CharField(max_length =100,choices=HEAR_CHOICES, null=True)
     Whcih_avenue_was_most_influential_in_joining_Moringa_School =models.CharField(max_length =100,choices=INFLUENCE_CHOICES, null=True)
-    Do_you_understand_that_you_need_to_pay_the_full_amount= models.CharField(max_length =100,choices=PAY_CHOICES, null=True)
+    Do_you_understand_that_you_need_to_pay_the_full_amount = models.CharField(max_length =100,choices=PAY_CHOICES, null=True)
     What_is_your_highest_level_of_education_completed =models.CharField(max_length =100,choices=EDUCATION_CHOICES, null=True)
     article_link = models.CharField(max_length =100)
 
     def __str__(self):
         name = self.first_name     
         return name
+

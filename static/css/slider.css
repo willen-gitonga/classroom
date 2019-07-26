@@ -1,0 +1,80 @@
+.no-container {
+    margin: 0 0 0 170px;
+  }
+  .slider div.card {
+    margin: 0 40px 0 0;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .slider div img{
+    width: 100%;
+    height: auto;
+  }
+  
+  .slick-dots {
+    text-align: center;
+    margin: 0 0 10px 0;
+    padding: 0;
+  }
+  .slick-dots li {
+    display: inline-block;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  .slick-dots li.slick-active button {
+    background-color: black;
+  }
+  .slick-dots li button {
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+    background-color: #999;
+    border: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  }
+  .slick-dots li :hover {
+    background-color: black;
+  }
+  /* Custom Arrow */
+  .prev,
+  .right,
+  .next,
+  .left{
+    color: #fff;
+    position: absolute;
+    top: 38%;
+    font-size: 1.5em;
+    background: #637C33;
+       box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .prev,
+  .right{
+    left: 0;
+    padding: 0 13px;
+  }
+  .next,
+  .left{
+    right: 2em;
+    padding: 0 16px;
+  }
+  .prev:hover,
+  .right:hover,
+  .next:hover,
+  .left:hover {
+    cursor: pointer;
+    color: #007C1C;
+  }
+  .slick-disabled{
+      background: #000;
+      cursor: not-allowed !important;
+  }
+  .partners .image div{
+      margin: 50px 25px 0;
+  }
+  .image div img{
+      width: 100%;
+  }
+  
