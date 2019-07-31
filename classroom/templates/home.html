@@ -1,11 +1,14 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<div style="background-image:url('static/img/all logo.png')">
+<img src="static/img/moringa logo2.png" alt="" data-placement="right">
   <h2>Welcome to the Moringa School Aptitude Test! <span class="icon-emo-happy"></span></h2>
   <p class="lead">
     If you already have an account, go ahead and <a href="{% url 'login' %}">log in</a>. If you are new, get started
-    by creating a <a href="{% url 'student_signup' %}">student account</a> or a <a href="{% url 'teacher_signup' %}">Admissions account</a>.
+    by creating a <a href="{% url 'student_signup' %}">student account</a> 
   </p>
   <hr>
- 
+</div>
 {% endblock %}
+static/img/moringa logo2.png

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -94,128 +93,117 @@
         document.write(unescape("%3Cscript src='" + tlJsHost + "trustlogo/javascript/trustlogo.js' type='text/javascript'%3E%3C/script%3E"));
         //]]>
     </script>
+
+<script>
+    $(window).scroll(function () {
+      $('nav').toggleClass('scrolled', $(this).scrollTop() > 625);
+    });
+  </script>
+
+  <style>
+  
+  #navbar.scrolled {
+      background-color: #637C33;
+    }
+</style>
          {% load bootstrap4 %}
     
     </head>
-</head>
 <body>
-    <div id="social-community" class="text-center">
-        <div class="footer-container">
-            <div class="row">
-                <div class="col-md-3">
-                    <span class="img-one"><img src="/static/img/footer/django.jpg" alt=""></span>
-                    <span class="img-two"><img src="/static/img/footer/python.jpg" alt=""></span>
-                    <span class="img-three"><img src="/static/img/footer/flask.jpg" alt=""></span>
-                    <span class="img-four"><img src="/static/img/footer/angular.svg" alt=""></span>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <h1 class="heading">Join the Community!</h1>
-                    <p class="paragraph">We are dedicated to providing good coding practices and
-                        <br>
-                        we would like you to be part of the community</p>
-                    <div class="enroll-button text-center">
-                        <a href="/programs/">
-                            <button class="btn btn-xl bg-green">Enroll Now!</button>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <span class="img-one"><img src="/static/img/footer/java.jpg" alt=""></span>
-                    <span class="img-two"><img src="/static/img/footer/spark.svg" alt=""></span>
-                    <span class="img-three"><img src="/static/img/footer/android.jpg" alt=""></span>
-                    <span class="img-four"><img src="/static/img/footer/javascript.jpg" alt=""></span>
-                </div>
-            </div>
+    <header id="banner_image">
+        <!-- Navigation -->
+        
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-inverse navbar-fixed-top" id="navbar">
+    <div class="container-fluid mynav">
+        <a class="navbar-brand" href="/">
+            <img id="logo" src="/static/img/main-logo.png" alt="">
+        </a>
+        <button class="navbar-toggler navbar-dark navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav nav navbar-left">
+                
+
+    
+        <li class="dropdown"><a href="#" class="" data-toggle="dropdown">Programs <i class="fa fa-chevron-down"></i></a>
+            <ul class="dropdown-menu" id="dropdown">
+                <li><a href="/programs/">Programs</a></li>
+                
+                    
+                        <li><a href="/programs/data-science-course/">Data Science</a></li>
+                    
+                        <li><a href="/programs/software-development/">Software Development Prep</a></li>
+                    
+                
+            </ul>
+        </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+
+            </ul>
+            <ul class="navbar-nav nav navbar-right ml-auto">
+                
+<div class="dropdown">
+    
+        <!-- no child pages  -->
+        
+    
+        <!-- no child pages  -->
+        
+            <li><a href="/learning-model/">Learning Model</a></li>
+        
+    
+        <!-- no child pages  -->
+        
+            <li><a href="/about-us/">About Us</a></li>
+        
+    
+        <!-- no child pages  -->
+        
+            <li><a href="/outcomes/">Outcomes</a></li>
+        
+    
+        <!-- no child pages  -->
+        
+            <li><a href="/events/">Events</a></li>
+        
+    
+    <li><a href="/corporate-training">Corporate Training</a></li>
+    <!-- <li><a href="https://nairobitechweek.com">NTW</a></li> -->
+    <li><a href=/careers>Careers</a></li>
+    <li><a href="{% url 'logout' %}">Logout</a></li>
+    <!-- <li><p class="pt-3"> <strong>{{ user.username }}</strong>. <a href="{% url 'logout' %}">Log out</a>.</p></li> -->
+
+</div>
+
+            </ul>
         </div>
     </div>
-    <section id="footer-social" class=" bg-green">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-12">
-                    <p><a href="https://www.facebook.com/moringaschool/" target="_blank"><i class="fa fa-facebook-square"></i>Find us on
-                        Facebook</a></p>
-                </div>
-                <div class="col-md-3 col-sm-12">
-                    <p><a href="https://www.youtube.com/channel/UCnkYPrm1GvxDzGlT0S2zn4w/videos" target="_blank"><i
-                            class="fa fa-youtube-square"></i>Watch us on YouTube</a></p>
-                </div>
-                <div class="col-md-3 col-sm-12">
-                    <p><a href="https://www.linkedin.com/company/moringa-school" target="_blank"><i class="fa fa-linkedin-square"></i>Engage
-                        with us on LinkedIn</a></p>
-                </div>
-                <div class="col-md-3 col-sm-12">
-                    <p><a href="https://twitter.com/moringaschool" target="_blank"><i class="fa fa-twitter-square"></i>Follow us on Twitter</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer>
+</nav>
+
         <div class="container-fluid">
-            
-    <div class="footer_nav">
-        <div class="row">
-            <div class="col-md-3">
-                <p><a href="tel:+254711581484"><b>General Enquiries:</b> +254 711 581 484</a></p>
-                <p><a href="https://wa.me/254712293878"><b>WhatsApp Enquiries:</b> <i class="fab fa-whatsapp"></i> +254 711 581 484</a></p>
-                <p><b>Email:</b> contact@moringaschool.com</p>
-                <p><b>Admissions Enquiries:</b> +254 712 293 878</p>
-                <p><b>Data Science Enquiries:</b> +254 741 493 565</p>
-                <p><b>Address:</b> P.O.Box 28860-00100</p>
-                <p><b>Location:</b> Ngong Lane Plaza, Ngong Lane. Nairobi</p>
-            </div>
-            
-                
-                    <div class="col-md-3">
-                        <p class="p-heading"><a href="/programs/">Programs</a></p>
-                        
-                            
-                                <p><a href="/programs/data-science-course/">Data Science</a></p>
-                            
-                                <p><a href="/programs/software-development/">Software Development Prep</a></p>
-                            
-                        
-                    </div>
-                 
-            
-                
-            
-                
-            
-                
-            
-                
-            
-            <div class="col-md-3">
-                <!-- <p><a href=/careers>Careers</a></p> -->
-                
+            <div class="row">
+                <p class="img-shadow"></p>
+                <div class="col-md-12">
+                    <h1 class="banner_title">Software Development Prep Full-Time Course</h1>
+                    <p class="banner_line"></p>
                     
-                
-                    
-                        <p><a href="/learning-model/">Learning Model</a></p>
-                    
-                
-                    
-                        <p><a href="/about-us/">About Us</a></p>
-                    
-                
-                    
-                        <p><a href="/outcomes/">Outcomes</a></p>
-                    
-                
-                    
-                        <p><a href="/events/">Events</a></p>
-                    
-                
-                <p><a href=/access-programs>Access Program</a></p>
-                <p><a href=/corporate-training>Corporate Training</a></p>
+                </div>
             </div>
         </div>
-    </div>
-    
-        </div>
-    </footer>
-    
+    </header>
     
 
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
