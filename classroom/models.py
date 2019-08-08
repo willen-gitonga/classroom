@@ -10,7 +10,7 @@ class User(AbstractUser):
 
 class Subject(models.Model):
     name = models.CharField(max_length=30)
-    color = models.CharField(max_length=7, default='#007bff')
+    color = models.CharField(max_length=7, default='#637C33')
 
     def __str__(self):
         return self.name
@@ -149,4 +149,3 @@ class Stude(models.Model):
     def __str__(self):
         name = self.first_name     
         return name
-

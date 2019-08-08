@@ -72,7 +72,6 @@ class QuizUpdateView(UpdateView):
 
     def get_queryset(self):
         '''
-        This method is an implicit object-level permission management
         This view will only match the ids of existing quizzes that belongs
         to the logged in user.
         '''
@@ -126,8 +125,6 @@ class QuizResultsView(DetailView):
 def question_add(request, pk):
     # By filtering the quiz by the url keyword argument `pk` and
     # by the owner, which is the logged in user, we are protecting
-    # this view at the object-level. Meaning only the owner of
-    # quiz will be able to add questions to it.
     quiz = get_object_or_404(Quiz, pk=pk, owner=request.user)
 
     if request.method == 'POST':

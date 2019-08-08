@@ -12,7 +12,6 @@ from ..decorators import student_required
 from ..forms import StudentInterestsForm, StudentSignUpForm, TakeQuizForm
 from ..models import Quiz, Student, TakenQuiz, User
 
-
 class StudentSignUpView(CreateView):
     model = User
     form_class = StudentSignUpForm

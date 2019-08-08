@@ -9,6 +9,7 @@ from google.auth.transport.requests import Request
 # If modifying these scopes, delete the file token.pickle.
 SCOPES = ['https://www.googleapis.com/auth/calendar']
 
+
 def main():
     """Shows basic usage of the Google Calendar API.
     Prints the start and name of the next 10 events on the user's calendar.
@@ -35,7 +36,7 @@ def main():
     service = build('calendar', 'v3', credentials=creds)
 
     # Call the Calendar API
-    now = datetime.datetime.utcnow().isoformat() + 'Z' # 'Z' indicates UTC time
+    now = datetime.datetime.utcnow().isoformat() + 'Z'  # 'Z' indicates UTC time
     print('Getting the upcoming 10 events')
     events_result = service.events().list(calendarId='primary', timeMin=now,
                                         maxResults=10, singleEvents=True,
@@ -52,25 +53,24 @@ def main():
 # https://developers.google.com/calendar/quickstart/python
 # Change the scope to 'https://www.googleapis.com/auth/calendar' and delete any
 # stored credentials.
-
     event = {
-    'summary': 'Google I/O 2015',
-    'location': '800 Howard St., San Francisco, CA 94103',
-    'description': 'A chance to hear more about Google\'s developer products.',
+    'summary': 'Moringa Presentations',
+    'location': 'Ngong Lane Plaza,Nairobi Kenya',
+    'description': 'Booking an interview date',
     'start': {
-        'dateTime': '2015-05-28T09:00:00-07:00',
-        'timeZone': 'America/Los_Angeles',
+        'dateTime':  '2019-08-1T09:00:00-07:00',
+        'timeZone':  'Africa/Nairobi',
     },
     'end': {
-        'dateTime': '2015-05-28T17:00:00-07:00',
-        'timeZone': 'America/Los_Angeles',
+        'dateTime': '2019-08-1T17:00:00-07:00',
+        'timeZone': 'Africa/Nairobi',
     },
     'recurrence': [
         'RRULE:FREQ=DAILY;COUNT=2'
     ],
     'attendees': [
-        {'email': 'lpage@example.com'},
-        {'email': 'sbrin@example.com'},
+        {'email': 'willengitonga.wg@gmail.com'},
+        {'email': 'micahkimathi@gmail.com'},
     ],
     'reminders': {
         'useDefault': False,
@@ -82,9 +82,7 @@ def main():
     }
 
     event = service.events().insert(calendarId='primary', body=event).execute()
-    print('Event created: {}'.format( (event.get('htmlLink'))))
+    print('Event created: {}'.format((event.get('htmlLink'))))
     if event:
         print('Event created')
 
-if __name__ == '__main__':
-    main()
