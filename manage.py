@@ -57,15 +57,15 @@ def main():
 # Change the scope to 'https://www.googleapis.com/auth/calendar' and delete any
 # stored credentials.
     event = {
-    'summary': 'Moringa Presentations',
+    'summary': 'Moringa School Interview',
     'location': 'Ngong Lane Plaza,Nairobi Kenya',
     'description': 'Booking an interview date',
     'start': {
-        'dateTime':  '2019-08-1T09:00:00-07:00',
+        'dateTime':  '2019-08-8T09:00:00-07:00',
         'timeZone':  'Africa/Nairobi',
     },
     'end': {
-        'dateTime': '2019-08-1T17:00:00-07:00',
+        'dateTime': '2019-08-8T17:00:00-07:00',
         'timeZone': 'Africa/Nairobi',
     },
     'recurrence': [
