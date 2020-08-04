@@ -69,8 +69,8 @@ def main():
         'RRULE:FREQ=DAILY;COUNT=2'
     ],
     'attendees': [
-        {'email': 'willengitonga.wg@gmail.com'},
-        {'email': 'micahkimathi@gmail.com'},
+        {'email': ''},
+        {'email': ''},
     ],
     'reminders': {
         'useDefault': False,
